@@ -2,40 +2,19 @@ import express from "express";
 import { createServer as createViteServer } from "vite";
 import path from "path";
 import dotenv from "dotenv";
-import fs from "fs";
 import { GoogleGenAI, Type } from "@google/genai";
 
 dotenv.config();
 
-// Workaround para plataformas gratuitas (Render, Koyeb) que não suportam upload de arquivos.
-// Salva o conteúdo do JSON da Service Account num arquivo temporário e aponta o Google Auth para ele.
-if (process.env.GOOGLE_CREDENTIALS_JSON) {
-  try {
-    const keyPath = path.join(process.cwd(), 'gcp-service-account.json');
-    fs.writeFileSync(keyPath, process.env.GOOGLE_CREDENTIALS_JSON);
-    process.env.GOOGLE_APPLICATION_CREDENTIALS = keyPath;
-    console.log("Arquivo de credenciais do Google Cloud gerado dinamicamente.");
-  } catch (err) {
-    console.error("Erro ao gerar arquivo de credenciais:", err);
-  }
-}
-
 let ai: GoogleGenAI | null = null;
 const initAI = () => {
   if (ai) return ai;
-  const useVertex = process.env.VERTEX_AI_PROJECT_ID && process.env.VERTEX_AI_LOCATION;
-  if (useVertex) {
-    console.log("Inicializando com regras de segurança padrão-ouro: as chaves via Vertex AI estão protegidas no backend.");
-    ai = new GoogleGenAI({
-      vertexai: true,
-      project: process.env.VERTEX_AI_PROJECT_ID,
-      location: process.env.VERTEX_AI_LOCATION,
-    });
-  } else if (process.env.GEMINI_API_KEY) {
+  
+  if (process.env.GEMINI_API_KEY) {
     console.log("Inicializando com regras de segurança padrão-ouro: a Gemini API Key está mascarada e protegida apenas no backend.");
     ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   } else {
-    throw new Error("Credenciais de IA (Vertex ou Gemini) não configuradas. Verifique suas variáveis de ambiente.");
+    throw new Error("Credencial Gemini (API Key) não configurada. Verifique suas variáveis de ambiente.");
   }
   return ai;
 };
