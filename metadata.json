@@ -1,0 +1,5 @@
+{
+  "name": "Social Listen AI",
+  "description": "A web app that analyzes YouTube comments using Gemini AI to provide sentiment analysis and key topics.",
+  "requestFramePermissions": []
+}
