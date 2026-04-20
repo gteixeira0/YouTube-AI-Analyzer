@@ -25,6 +25,11 @@ async function startServer() {
 
   app.use(express.json({ limit: '50mb' }));
 
+  // Health Check route for UptimeRobot
+  app.get("/api/health", (req, res) => {
+    res.status(200).json({ status: "alive", timestamp: new Date().toISOString() });
+  });
+
   // API route to fetch YouTube comments
   app.post("/api/comments", async (req, res) => {
     try {
