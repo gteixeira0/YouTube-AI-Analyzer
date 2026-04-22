@@ -106,11 +106,11 @@ export default function App() {
 
       pdf.addImage(dataUrl, 'PNG', 0, 0, width, height);
 
-      // Adiciona rodapé discreto com link/referência
+// Adiciona texto discreto no canto superior direito
       pdf.setFontSize(12);
       pdf.setTextColor(128, 128, 128); // Cor cinza suave
-      const footerText = "Gerado por YouTube AI Analyzer - " + window.location.origin;
-      pdf.text(footerText, width / 2, height - 20, { align: "center" });
+      const headerText = "Gerado por YouTube AI Analyzer - " + window.location.origin;
+      pdf.text(headerText, width - 20, 25, { align: "right" });
       
       pdf.save('relatorio-social-listening.pdf');
     } catch (err) {
