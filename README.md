@@ -14,7 +14,7 @@
 
 <br>
 
-![Demo](./assets/demo.gif)
+![Demo](./public/dashboard-preview.png)
 
 </div>
 
@@ -24,13 +24,13 @@
 
 Analisar comentários de vídeos é uma etapa recorrente no trabalho de marketing — mas que consome tempo desproporcional ao valor que gera. Classificar sentimento, identificar tópicos e sintetizar padrões manualmente tira o foco do que realmente importa: a análise da campanha.
 
-Este serviço simplifica esse processo com IA: cole o link de qualquer vídeo do YouTube e obtenha em segundos uma leitura estruturada do que a audiência está dizendo, sentindo e esperando — liberando o analista para se dedicar à interpretação e à tomada de decisão.
+Este produto de dados simplifica esse processo com IA: cole o link de qualquer vídeo do YouTube e obtenha em segundos uma leitura estruturada do que a audiência está dizendo, sentindo e esperando — liberando o analista para se dedicar à interpretação e à tomada de decisão.
 
 > Desenvolvido por um analista de dados com quase 8 anos de experiência no Nubank, atuando na interseção entre Marketing Analytics, Growth e CX — incluindo a estruturação de fluxos de social listening com IA generativa que reduziram em 40% o tempo de análise.
 
 ---
 
-## O que o serviço entrega
+## O que a ferramenta entrega
 
 - **Análise de sentimento**
 Distribuição do público em positivo, neutro e negativo — com percentuais precisos e visualização imediata.
@@ -59,19 +59,6 @@ Relatório completo disponível em PDF (dashboard visual) e CSV (tabela com todo
 3. **Integração com YouTube API** — conexão com a YouTube Data API v3 para busca de comentários reais
 4. **Integração com Gemini API** — implementação dos fluxos de análise com IA e geração de respostas automáticas
 5. **Lançamento** — deploy em produção via Render
-
----
-
-## Tecnologias utilizadas
-
-| Área | Tecnologia |
-|---|---|
-| Inteligência Artificial | Google Gemini 2.5 Flash |
-| Frontend | React 19 + TypeScript |
-| Interface | Tailwind CSS + shadcn/ui |
-| Backend | Express.js |
-| Dados | YouTube Data API v3 |
-| Deploy | Render |
 
 ---
 
