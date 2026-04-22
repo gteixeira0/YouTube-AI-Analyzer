@@ -2,7 +2,7 @@
 
 # ▶️ YouTube AI Social Listening
 
-**Transforme comentários do YouTube em inteligência de audiência — em menos de 1 minuto**
+**Transforme comentários do YouTube em inteligência de audiência com Gemini AI em poucos minutos**
 
 [![Google Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
@@ -24,7 +24,7 @@
 
 Analisar comentários de vídeos é uma etapa recorrente no trabalho de marketing — mas que consome tempo desproporcional ao valor que gera. Classificar sentimento, identificar tópicos e sintetizar padrões manualmente tira o foco do que realmente importa: a análise da campanha.
 
-Este app simplifica esse processo com IA: cole o link de qualquer vídeo do YouTube e obtenha em segundos uma leitura estruturada do que a audiência está dizendo, sentindo e esperando — liberando o analista para se dedicar à interpretação e à tomada de decisão.
+Este serviço simplifica esse processo com IA: cole o link de qualquer vídeo do YouTube e obtenha em segundos uma leitura estruturada do que a audiência está dizendo, sentindo e esperando — liberando o analista para se dedicar à interpretação e à tomada de decisão.
 
 > Desenvolvido por um analista de dados com quase 8 anos de experiência no Nubank, atuando na interseção entre Marketing Analytics, Growth e CX — incluindo a estruturação de fluxos de social listening com IA generativa que reduziram em 40% o tempo de análise.
 
