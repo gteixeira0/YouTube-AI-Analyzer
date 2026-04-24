@@ -1,6 +1,6 @@
 <div align="center">
 
-# ▶️ YouTube AI Social Listening
+# ▶️ YouTube AI Analyzer
 
 **Transforme comentários do YouTube em inteligência de audiência com Gemini AI em poucos minutos**
 
